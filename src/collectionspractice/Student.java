@@ -1,6 +1,6 @@
 package collectionspractice;
 
-public class Student implements Comparable<Student>{
+public class Student {
 	
 	private String name;
 	private int id;
@@ -34,11 +34,7 @@ public class Student implements Comparable<Student>{
 		this.id = id;
 		this.age = age;
 	}
-	@Override
-	public int compareTo(Student o) {
-		// TODO Auto-generated method stub
-		return this.getAge() - o.getAge() ;
-	}
+	
 	
 	
 	

@@ -12,7 +12,8 @@ public class CollectionsDemonstration {
 		studentList.add(new Student("Altaf", 2, 39));
 		studentList.add(new Student("Vivica", 3, 33));
 		
-		Collections.sort(studentList);
+		Collections.sort(studentList, new AgeComparator());
+		Collections.reverse(studentList);
 		
 		for (Student student : studentList) {
 			System.out.println(student);
