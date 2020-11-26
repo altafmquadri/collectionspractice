@@ -1,5 +1,6 @@
 package collectionspractice;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CollectionsDemonstration {
@@ -11,8 +12,12 @@ public class CollectionsDemonstration {
 		studentList.add(new Student("Altaf", 2, 39));
 		studentList.add(new Student("Vivica", 3, 33));
 		
+		Collections.sort(studentList);
+		
 		for (Student student : studentList) {
 			System.out.println(student);
+			
+			
 		}
 	}
 	
